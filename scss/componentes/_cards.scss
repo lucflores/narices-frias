@@ -1,0 +1,137 @@
+$estilos: (
+  caja: flex,
+  flexw: wrap,
+  bordes: 10px,
+  relleno: 10px,
+  contenedor: center,
+);
+
+.card__container {
+  display: map-get($estilos, caja);
+  flex-wrap: map-get($estilos, flexw);
+  border-radius: map-get($estilos, bordes);
+  padding: map-get($estilos, relleno);
+  justify-content: map-get($estilos, contenedor);
+
+  .card__datos {
+    background-image: radial-gradient(
+      circle at 52.53% 21.04%,
+      #fecb55 25%,
+      #f2b53c 50%,
+      #e69f21 75%,
+      #dc8c00 100%
+    );
+    width: 250px;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: auto;
+  }
+  .card__title {
+    padding: 10px;
+    color: color;
+  }
+  .card__datos__imagen {
+    /*Centramos la imagendentro del contenedor*/
+    height: 130px;
+    width: 200px;
+    margin: auto;
+    display: map-get($estilos, caja);
+    border-radius: 10px;
+  }
+  .card__datos__descripcion {
+    overflow: auto;
+    align-items: center;
+    display: map-get($estilos, caja);
+    height: 150px;
+    margin: 15px;
+  }
+}
+
+.card__container__nosotros {
+  display: map-get($estilos, caja);
+  flex-wrap: map-get($estilos, flexw);
+  border-radius: map-get($estilos, bordes);
+  padding: map-get($estilos, relleno);
+  justify-content: map-get($estilos, contenedor);
+
+  .card__nosotros {
+    background-image: radial-gradient(
+      circle at 52.53% 21.04%,
+      #fecb55 25%,
+      #f2b53c 50%,
+      #e69f21 75%,
+      #dc8c00 100%
+    );
+    display: inline-flex;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .card__nosotros__descripcion {
+    overflow: auto;
+    align-items: center;
+    display: map-get($estilos, caja);
+    height: 200px;
+    padding: 25px;
+  }
+  .card__nosotros__imagen {
+    height: 300px;
+    margin: auto;
+    display: map-get($estilos, caja);
+    border-radius: 10px;
+  }
+  h3 {
+    color: black;
+  }
+}
+
+.card__container__refugio {
+  display: map-get($estilos, caja);
+  flex-wrap: map-get($estilos, flexw);
+  border-radius: map-get($estilos, bordes);
+  padding: map-get($estilos, relleno);
+  justify-content: map-get($estilos, contenedor);
+
+  .card__info {
+    background-image: radial-gradient(
+      circle at 52.53% 21.04%,
+      #fecb55 25%,
+      #f2b53c 50%,
+      #e69f21 75%,
+      #dc8c00 100%
+    );
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    width: 44%;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    overflow: auto;
+  }
+  .card__refugios__descripcion {
+    overflow: auto;
+    align-items: center;
+    padding: 40px 0px 0px 0px;
+    height: 150px;
+  }
+  .card__refugios__img {
+    /*Centramos la imagendentro del contenedor*/
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    display: map-get($estilos, caja);
+    border-radius: 90%;
+    border: 1px solid #eee;
+    overflow: hidden;
+
+    &:hover {
+      -webkit-transform: scale(1);
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Courgette", cursive;
+  margin: 0px;
+  background-image: url(../imagenes/4.jpg);
+}
+.titulo__titulo--uppercase {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+  top: 40%;
+  width: 100%;
+  font-family: "Courgette", cursive;
+  font-size: 3em;
+  text-align: center;
+  transform: translate;
+  color: #fff;
+  transform: translateY (-50%);
+}

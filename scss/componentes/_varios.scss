@@ -1,0 +1,37 @@
+$paleta_de_colores: (
+  primario: #eee,
+  secundario: gray,
+);
+
+footer {
+  /*Centramos los elementos dentro del footer*/
+  margin: auto;
+  color: map-get($paleta_de_colores, primario);
+  text-align: center;
+}
+.formulario {
+  max-width: 25em;
+  margin: 0 auto;
+  font-weight: bold;
+  border-radius: 0.5em;
+  box-shadow: inset 1px 1px 22px 4px;
+  textarea:focus {
+    background-color: map-get($paleta_de_colores, primario);
+  }
+  textarea {
+    resize: both;
+  }
+  input:focus {
+    background-color: map-get($paleta_de_colores, primario);
+  }
+  label {
+    color: map-get($paleta_de_colores, primario);
+  }
+  .btn {
+    background-color: map-get($paleta_de_colores, primario);
+    color: map-get($paleta_de_colores, secundario);
+    padding: 10px;
+    display: grid;
+    margin: auto;
+  }
+}
