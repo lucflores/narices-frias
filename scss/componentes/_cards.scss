@@ -5,7 +5,11 @@ $estilos: (
   relleno: 10px,
   contenedor: center,
 );
-
+.card__title{
+  font-size: 25px;
+  color: $color;
+  text-align: center;
+}
 .card__container {
   display: map-get($estilos, caja);
   flex-wrap: map-get($estilos, flexw);
@@ -29,10 +33,6 @@ $estilos: (
     flex-wrap: wrap;
     grid-template-columns: auto;
   }
-  .card__title {
-    padding: 10px;
-    color: color;
-  }
   .card__datos__imagen {
     /*Centramos la imagendentro del contenedor*/
     height: 130px;
@@ -43,10 +43,13 @@ $estilos: (
   }
   .card__datos__descripcion {
     overflow: auto;
-    align-items: center;
     display: map-get($estilos, caja);
-    height: 150px;
-    margin: 15px;
+    height: 200px;
+    margin: 5px;
+  }
+  h3 {
+    color: black;
+    text-align: center;
   }
 }
 
@@ -74,10 +77,9 @@ $estilos: (
   }
   .card__nosotros__descripcion {
     overflow: auto;
-    align-items: center;
     display: map-get($estilos, caja);
     height: 200px;
-    padding: 25px;
+    padding: 5px;
   }
   .card__nosotros__imagen {
     height: 300px;
@@ -87,6 +89,7 @@ $estilos: (
   }
   h3 {
     color: black;
+    text-align: center;
   }
 }
 
@@ -115,9 +118,8 @@ $estilos: (
   }
   .card__refugios__descripcion {
     overflow: auto;
-    align-items: center;
     padding: 40px 0px 0px 0px;
-    height: 150px;
+    height: 200px;
   }
   .card__refugios__img {
     /*Centramos la imagendentro del contenedor*/
@@ -133,5 +135,9 @@ $estilos: (
       -webkit-transform: scale(1);
       transform: scale(1.1);
     }
+  }
+  h3 {
+    color: black;
+    text-align: center;
   }
 }

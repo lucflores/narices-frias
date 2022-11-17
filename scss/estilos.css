@@ -52,6 +52,12 @@ nav li a:hover {
   text-decoration: underline;
 }
 
+.card__title {
+  font-size: 25px;
+  color: #eee;
+  text-align: center;
+}
+
 .card__container {
   display: flex;
   flex-wrap: wrap;
@@ -69,10 +75,6 @@ nav li a:hover {
   flex-wrap: wrap;
   grid-template-columns: auto;
 }
-.card__container .card__title {
-  padding: 10px;
-  color: color;
-}
 .card__container .card__datos__imagen {
   /*Centramos la imagendentro del contenedor*/
   height: 130px;
@@ -83,10 +85,13 @@ nav li a:hover {
 }
 .card__container .card__datos__descripcion {
   overflow: auto;
-  align-items: center;
   display: flex;
-  height: 150px;
-  margin: 15px;
+  height: 200px;
+  margin: 5px;
+}
+.card__container h3 {
+  color: black;
+  text-align: center;
 }
 
 .card__container__nosotros {
@@ -107,10 +112,9 @@ nav li a:hover {
 }
 .card__container__nosotros .card__nosotros__descripcion {
   overflow: auto;
-  align-items: center;
   display: flex;
   height: 200px;
-  padding: 25px;
+  padding: 5px;
 }
 .card__container__nosotros .card__nosotros__imagen {
   height: 300px;
@@ -120,6 +124,7 @@ nav li a:hover {
 }
 .card__container__nosotros h3 {
   color: black;
+  text-align: center;
 }
 
 .card__container__refugio {
@@ -141,9 +146,8 @@ nav li a:hover {
 }
 .card__container__refugio .card__refugios__descripcion {
   overflow: auto;
-  align-items: center;
   padding: 40px 0px 0px 0px;
-  height: 150px;
+  height: 200px;
 }
 .card__container__refugio .card__refugios__img {
   /*Centramos la imagendentro del contenedor*/
@@ -157,6 +161,10 @@ nav li a:hover {
 }
 .card__container__refugio .card__refugios__img:hover {
   transform: scale(1.1);
+}
+.card__container__refugio h3 {
+  color: black;
+  text-align: center;
 }
 
 footer {
