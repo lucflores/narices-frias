@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Courgette", cursive;
+  font-family: "Roboto", sans-serif;
   margin: 0px;
   background-image: url(../imagenes/4.jpg);
 }
@@ -175,7 +175,7 @@ footer {
 }
 
 .formulario {
-  max-width: 25em;
+  max-width: 45em;
   margin: 0 auto;
   font-weight: bold;
   border-radius: 0.5em;
